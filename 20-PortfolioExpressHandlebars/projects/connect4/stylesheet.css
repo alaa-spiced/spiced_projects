@@ -1,0 +1,75 @@
+body {
+    width: 100vh;
+    height: 100vh;
+}
+
+.board {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-gap: none;
+    grid-template-columns: repeat(7, auto);
+    z-index: 1;
+}
+.piece1 .hole{
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    width: 7%;
+    height: 9%;
+    z-index: 2;
+    cursor: pointer;
+    background-color: olive;
+}
+
+.piece2 .hole{
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    width: 7%;
+    height: 9%;
+    z-index: 2;
+    cursor: pointer;
+    background-color: black;
+}
+
+.column {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(6, auto);
+    margin-left: 4%;
+}
+
+.slot {
+    width: 100%;
+    height: 100%;
+    background-color: #001f3f;
+    padding-top: 18%;
+    padding-left: 18%;
+    transition: 1.5s;
+}
+
+.hole {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: white;
+    transition: 1s;
+    }
+
+.winner {
+    background-color: red;
+}
+
+.slot.player1 .hole {
+    background-color: olive;
+}
+
+.slot.player2 .hole {
+    background-color: black;
+}

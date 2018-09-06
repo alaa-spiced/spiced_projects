@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GitHub API</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+    <h1>Fun with GitHub API!!!</h1>
+    <form>
+        <input name="username" type="text" placeholder="your username" autocomplete="off">
+        <input name="password" type="password" placeholder="your password" autocomplete="off">
+        <input name="username-to-search" type="text" placeholder="username to search" autocomplete="off">
+        <button type="button">Submit</button>
+        </form>
+
+
+        <div class="repos"></div>
+
+
+<!--
+        going to a specified index of an array
+        {{#names}}
+            {{name}} is {{@index}}
+        {{/names}}
+ -->
+
+
+        <!--My Repos Handelbar -->
+        <script id="listOfRepos" type="text/x-handlebars-template">
+            {{#each reposResults}}
+            <img class="repo-owner-profile-img" src="{{owner.avatar_url}}+".png>
+        <div class="repoAndCommits"><p class="full-name"> {{full_name}} </p></div>
+            {{/each}}
+        </script>
+
+        <script id="listOfCommits" type="text/x-handlebars-template">
+                {{#each last10Commits}}
+                    {{#commit}}
+                        <p class="commit">{{ message.message }}</p>
+                    {{/commit}}
+                {{/each}}
+            </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

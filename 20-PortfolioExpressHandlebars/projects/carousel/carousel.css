@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#kitties {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.kitty {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0s;
+}
+
+.kitty img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kitty.onscreen {
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+
+.kitty.exit {
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+/* The dots/bullets/indicators */
+#dots {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    text-align: center;
+    width: 100%;
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border: 3px white solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.hightlight {
+    background-color: white;
+}

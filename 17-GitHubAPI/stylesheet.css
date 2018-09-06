@@ -1,0 +1,24 @@
+input:focus {
+    outline: 0;
+}
+p.full-name {
+font-family: "Helvetica Neue";
+font-weight: 100;
+font-size: 14px;
+padding-left: 2%;
+}
+
+.repos {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 60px;
+    padding-top: 5%;
+}
+
+.repo-owner-profile-img {
+        width: 80%;
+        height:180%;
+}

@@ -1,0 +1,17 @@
+{
+    "carousel":{
+      "name": "Kitty Carousel",
+    "description:": "This was the first project I did using CSS transitions and DOM event handling. The hardest part was getting the right images to slide in and slide out at the right time. It was like herding cats."
+    },
+
+    "connect4":{
+      "name": "Connect Four",
+    "description:": "Connect four is fun."
+    },
+
+    "spotify":{
+      "name": "Spotify Search",
+    "description:": "Spotify search is nice."
+    }
+
+}

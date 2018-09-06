@@ -1,0 +1,70 @@
+1. input (text field)
+   
+	* loop through list of countries and add each country that starts with the current value of the text field to an array
+   
+	* edge case: if value of the text field is an empty string, do not make a list of matches and hide/empty any results you are currently showing
+   
+	* if the list of matches has more than four items in it, reduce it to four. (alternatively, in the loop `break` once the length of the matches array
+	 reaches four)
+   
+	* if the list of matches is empty, set the html of your results container to contain a "no results" message
+   
+	* if the the list of matches is not empty, loop through the matches, create html for each result, and finally put the html into the 
+	results container 
+
+
+2. mouseover/mouseenter (individual result)
+   
+	* remove highlight class from the element that has it (if any)
+   
+	* add highlight class to the target of the event
+
+
+
+3. mousedown (individual result)
+   
+	* set the value of the text field to be the text of the target of the event
+   
+	* hide/empty the results
+
+
+
+4. keydown (text field)
+   
+	* if the key is the down arrow
+     
+		- if no result has highlight class, add highlight class to the first result
+     
+		- if any result except the last result has the highlight class, remove the highlight class from the one that has it and add it to the next one
+     
+		- if the last result has the highlight class, do nothing
+  
+ 
+	* if the key is the up arrow
+   
+		- if no result has highlight class, add highlight class to the last result
+     
+		- if any result except the first result has the highlight class, remove the highlight class from the one that has it and add it
+		  to the previous one
+     
+		- if the first result has the highlight class, do nothing
+   
+
+	* if the key is enter/return
+    
+		- set the value of the text field to be the text of the result that currently has the highlight class 
+     
+		- hide/empty results 
+
+
+
+5. blur (text field)
+   
+	* empty/hide the results
+6. focus (text field)
+   
+	* show results that match the text currently in the text field
+
+6. focus (text field)
+   
+	* show results that match the text currently in the text field

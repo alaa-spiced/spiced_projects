@@ -1,0 +1,1 @@
+2. Make a page that has a `<textarea>` element on it. As the user types visible characters into this field, the characters should be replaced with the characters in the corresponding position in <a href="http://www.d.umn.edu/~rmaclin/gettysburg-address.html">the Gettysburg Address</a>. (Note - you can get and set the text in a `<textarea>` through its `value` property.)
